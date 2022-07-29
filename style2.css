@@ -1,0 +1,124 @@
+/*home*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-color: white;
+}
+#main{
+  background-color: rgb(0, 23, 0);
+}
+#main .logo{
+  float: left;
+  color: white;
+  line-height: 70px;
+  padding-left: 60px;
+}
+#main::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+#main ul{
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+#main ul li{
+  float: left;
+  display: inline-block;
+  background: rgb(0, 23, 0);
+  margin: 0 5px;
+}
+#main ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+#main ul li a:hover{
+  color: grey;
+}
+#main ul ul{
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+#main ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+#main ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  background-color: grey;
+  float: none;
+  display: list-item;
+}
+#main ul ul li a{
+  line-height: 50px;
+  display: block;
+}
+#main ul ul li a:hover{
+  background-color: rgb(69, 68, 68);
+  color: rgb(0, 23, 0);
+}
+
+/* boxes */
+#z{
+	margin-left: 250px;
+	margin-top: 100px;
+}
+img{
+	border-style:solid; 
+	border-color:rgb(0, 23, 0); 
+	border-width:20px;
+	background-color: rgb(0, 23, 0);
+	border-bottom-width: 50px;
+	border-radius:10px
+}
+.box{
+	position: relative;
+	display: inline-block;
+	border-style:solid; 
+	border-color:rgb(0, 23, 0); 
+	border-width:15px;
+	background-color: rgb(0, 23, 0);
+	border-bottom-width: 50px;
+	border-radius:10px
+}
+.box  .text{
+	position: absolute;
+	z-index:99;
+	color: white;
+	
+}
+.text{
+	left: 18px;
+	bottom: -10px;
+}
+h1{
+	font-size: large;
+	padding-bottom: 10px;
+}
+h3{
+	font-size: medium;
+	float: left;
+}
+#n{
+	margin-right: 120px;
+}
+.box:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 1s
+}
